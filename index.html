@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<!-- <!DOCTYPE html>    indicamos al navegaor q estamos trabajando con la ultima version de html5  -->
+
+<html lang="es">
+
+<!-- head   : van los metadatos informaocion q indiucamos al navegador para q identifique de forma correcta la pagian web -->
+
+<head>
+
+    <!-- html lang="es">    indica en q idioma esta escrinto el docuimento html -->
+
+    <!-- indicamos al navegador q tenbemos vocales con tilde -->
+    <!-- Lea codigo ASCII-->
+    <meta charset="UTF-8">
+
+    <!-- Para q el visitio web sea adaptable a cualquier dispositivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- contniendio de la pagina web -->
+    <meta name="description" content="Esta es mi primera pagina web">
+
+    <!-- para el motor de busquedad busque mi pagina / escanear-->
+    <meta name="robots" content="index, follow">
+
+    <!-- palabras claves para encontrar mi pagina web -->
+    <meta name="keywords" content="pagina, website, sitio web, mi primera">
+
+    <!-- Nombre de nuestra página -->
+    <meta name="copyright" content="Copyright © MiWeb.com">
+
+    <!-- Indicarle al autor de quien ha creado la pagina web -->
+    <meta name="Author" Lang="es" content="Gerson N">
+
+
+    <!-- para q la pagina se recargue cada 10 segundos de acuerdo al contenido -->
+    <meta http-equiv="refresh" content="10" />
+
+    <!-- 
+    observacion : para q despues de 5 segundos se recargue otra pogina web 
+
+    <meta http-equiv="refresh" content="5; url=https://www.youtube.com/@geronelo1435" />    
+    -->
+
+
+    <!-- normalize : agregamos un archivo .css -->
+    <link rel="stylesheet" href="./css/normalize.css">
+
+
+    <!-- estilos css : agregamos un archivo .css -->
+    <link rel="stylesheet" href="./css/estilos.css">
+
+
+
+
+    <!-- icono en la pagina web : para importar iconos -->
+    <link rel="shortcut icon" href="./imagenes/icon.png" type="image/x-icon">
+
+    <!-- 
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    -->
+
+    <!-- enlace para icnos de fontawesome -->
+    <script src="https://kit.fontawesome.com/2ad58faca7.js" crossorigin="anonymous"></script>
+
+
+
+    <!-- 
+    colocar un nombre referido a lo q contiene el documento html  y se mostrara en una pestaña -->
+    <title>Maquetacion</title>
+
+</head>
+
+
+<body>
+
+
+    <!-- contenedor header -->
+    <header class="contenedor__header">
+
+        <!-- contneedor dond esta el logo y menu -->
+        <div class="contenedor__superior">
+
+            <!-- contenedor fijo para todos -->
+            <div class="contenedor">
+
+                <!-- logo-->
+                <div class="superior__logo">
+                    <h1 class="superior__logo__titulo">
+                        Coffee Lover
+                    </h1>
+                </div>
+
+                <!-- menu -->
+                <div class="superior__menu">
+                    <ul class="superior__menu__opciones">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#About">About</a></li>
+                        <li><a href="#Testimonial">Testimonial</a></a></li>
+                        <li><img src="./imagenes/button.png" alt="button" title="button"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- contenedor__banner -->
+        <div class="contenedor__banner">
+            <div class="contenedor">
+
+                <div class="banner__imagen">
+                    <img src="./imagenes/coffee.gif" alt="coffee" title="coffee">
+                </div>
+
+
+                <div class="banner__titulo">
+                    <h2>Lectus Magna Fringilia urna</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus
+                        venenatis,
+                        lectus magna fringilla urna, porttitor rhoncus dolor purus non enim.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+
+
+    <!-- contenedor__about-->
+    <section class="contenedor__about" id="About">
+
+        <div class="contenedor">
+
+            <h3 class="about__titulo">
+                About
+            </h3>
+
+
+            <div class="about__textoIzquierdo">
+                <p class="textoIzquierdo__parrafo1">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis ultrices ac dui posuere et, arcu,
+                    morbi duis egestas.
+                </p>
+            </div>
+
+
+            <div class="about__textoDerecho">
+
+                <p class="textoDerecho__parrafo1">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis ultrices ac dui posuere et, arcu,
+                    morbi duis egestas. Viverra venenatis neque tristique viverra a non velit in. Risus, dictum quam
+                    maecenas ipsum feugiat diam pretium sed. In lectus praesent elementum orci. Adipiscing mi pharetra
+                    ut at semper aenean odio. Purus faucibus sed donec posuere. Varius a consequat ullamcorper et non
+                    faucibus. Ut convallis sit tempor, pretium. Ornare purus pellentesque dictum lectus. Vel dignissim
+                    tellus cras velit turpis viverra quisque nunc, sit. Nisl pellentesque euismod id sociis. Vitae et,
+                    quis nibh ornare cursus. Posuere ultricies laoreet felis molestie enim pharetra lectus ut tristique.
+                    Congue accumsan sapien lobortis dolor
+                </p>
+
+
+                <p class="textoDerecho__parrafo2">
+                    Nunc, condimentum odio massa diam. Morbi quis enim nisl enim, tristique amet. Aliquam nec in ut nunc
+                    nulla malesuada
+                    vestibulum. Sem sed nunc, nisi diam maecenas quam arcu sed. Risus enim faucibus gravida a egestas
+                    tincidunt purus vel
+                    purus. Cras ullamcorper diam rhoncus id vulputate elit erat. Sem iaculis duis tincidunt condimentum
+                    mollis venenatis eu.
+                    Vulputate nibh lobortis maecenas amet ac magna eu purus. Auctor amet, sed pellentesque hendrerit.
+                    Nunc feugiat neque
+                    tortor interdum aliquam laoreet ut mus enim. Consectetur sed lobortis orci, quam feugiat adipiscing
+                    adipiscing id mi.
+                    Varius molestie dictum viverra curabitur maecenas cras pellentesque. Sit non neque eget ornare magna
+                    posuere eu.
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+
+    </section>
+
+
+
+
+    <!-- contenedor_testimonial -->
+    <section class="contenedor__testimonial" id="Testimonial">
+
+        <div class="contenedor">
+
+            <h3 class="testimonial__titulo">
+                Testimonial
+            </h3>
+
+            <div class="testimonial__textoIzq">
+                <p class="testimonial__textoIzq__parrafo1">
+                    Nunc, condimentum odio massa diam. Morbi quis enim nisl enim, tristique amet. Aliquam nec in ut nunc
+                    nulla malesuada vestibulum. Sem sed nunc, nisi diam maecenas quam arcu sed. Risus enim faucibus
+                    gravida a egestas tincidunt purus vel purus. Cras ullamcorper diam rhoncus id vulputate elit erat
+                </p>
+
+                <p class="testimonial__textoIzq__parrafo2">
+                    Joan Doe
+                </p>
+
+            </div>
+
+
+            <div class="testimonial__textoDer">
+                <p class="testimonial__textoDer__parrafo1">
+                    Nunc, condimentum odio massa diam. Morbi quis enim nisl enim, tristique amet. Aliquam nec in ut nunc
+                    nulla malesuada vestibulum. Sem sed nunc, nisi diam maecenas quam arcu sed. Risus enim faucibus
+                    gravida a egestas tincidunt purus vel purus. Cras ullamcorper diam rhoncus id vulputate elit erat
+                </p>
+
+                <p class="testimonial__textoDer__parrafo2">
+                    Joan Doe
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- contenedor__aplicativo -->
+    <section class="contenedor__aplicativo">
+        <div class="contenedor">
+
+            <div class="aplicativo__logo">
+                <img src="./imagenes/button.png" alt="button" title="button">
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <footer class="contenedor__footer">
+        <div class="contenedor">
+
+            <div class="footer__derechos">
+                <p class="derechos">
+                    &copy; 2024, Diseñado por <span>Gerson N</span>
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+
+</body>
+
+
+
+
+</html>

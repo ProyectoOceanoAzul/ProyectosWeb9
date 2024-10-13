@@ -1,0 +1,450 @@
+
+/*Google Fons       recomendable realizar la importacion del mismo archivo .css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+/*bootstrap Iconos*/
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+
+
+/*Para resetear*/
+*{
+
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+
+
+    /*
+        outline: 1px solid red;
+    */
+
+
+
+    -webkit-box-sizing: border-box;
+
+}
+
+
+
+html,
+body{
+
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--colorFondoBody);
+
+    /*desplazamieento suave cuando se usa navevacion por ancla*/
+    scroll-behavior: smooth;
+
+}
+
+
+/*Estilos generales*/
+:root{
+    --colorFondoBody: #FFFFFF ;
+    --colorEstilo1:#FBE5E8 ;
+    --colorEstilo2:#a72950 ;
+    --colorTexto: #000000;
+}
+
+
+h1{
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+h2{
+    font-size: 2.8rem;
+}
+h3{
+    font-size: 1.5rem;
+}
+p{
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    margin: 10px 0; /*********************************/
+}
+a{
+    text-decoration: none;
+    color: var(--colorTexto);
+}
+
+
+/*contenedor general*/
+div.contenedor{
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 20px;    /**************************************/
+
+
+    overflow: auto;
+}
+
+
+/*muestre toda la pantalla vertical*/
+header.contenedor__header{
+    height: 100vh;  /*abarca toofa el tamaño de la pantalla*/
+}
+
+
+div.contenedor__superior{    
+    overflow: auto;   /*para q oculte los restante*/
+    
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+div.superior__logo{
+    float: left;
+  /**********************     padding-top: 16px;*/
+}
+
+div.superior__menu{
+    float: right;   
+    padding-top: 10px;
+   
+}
+
+ul.superior__menu__opciones{
+    list-style: none;  
+}
+
+ul.superior__menu__opciones li{
+    float: left;
+}
+
+ul.superior__menu__opciones li img{
+    height: 45px;    
+}
+
+ul.superior__menu__opciones li a{
+    font-weight: 400;
+
+    padding: 20px;
+    display: block;
+}
+
+ul.superior__menu__opciones li a:hover{
+    color: var(--colorEstilo2);
+    text-decoration: underline;
+}
+
+
+
+/*contenedor__banner*/
+div.contenedor__banner{
+    padding: 90px 0 90px 0;
+}
+div.banner__imagen{
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+div.banner__imagen img{
+    width: 600px;
+    max-width: 100%;    
+}
+
+
+div.banner__titulo h2{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 500;
+
+}
+
+div.banner__titulo p{
+    width: 45%;
+    font-size: 0.9rem;
+    text-align: center;
+    margin: 0 auto;
+
+    padding-top: 15px;
+}
+
+
+/*about*/
+section.contenedor__about{
+    padding: 30px 0 90px 0;
+}
+
+
+h3.about__titulo{
+    text-align: center;
+    padding: 20px;
+    width: 20%;
+
+
+    margin: auto;
+    background-color: var(--colorEstilo1);
+    font-weight: 400;
+    text-transform: uppercase;    
+}
+
+
+div.about__textoIzquierdo{
+    float: left;
+    width: 50%;
+
+    padding-top: 150px;
+    padding-right: 30px;
+    
+}
+
+
+div.about__textoDerecho{
+    float: left;
+    width: 50%;
+    padding-top: 150px;
+}
+
+p.textoIzquierdo__parrafo1{
+    font-size: 3.5rem;
+    line-height: normal;
+    
+    font-weight: 300;
+}
+
+p.textoDerecho__parrafo1,
+p.textoDerecho__parrafo2
+{
+    font-size: 1rem;
+    margin-bottom: 20px;
+    text-align: right;
+    padding: 0 10px;
+}
+
+
+
+
+/*Testimonial*/
+section.contenedor__testimonial{
+    padding: 30px 0 90px 0;
+}
+
+h3.testimonial__titulo{
+    text-align: center;
+    padding: 20px;
+    width: 20%;
+
+
+    margin: auto;
+    background-color: var(--colorEstilo1);
+    font-weight: 400;
+    text-transform: uppercase;    
+    
+}
+
+
+
+div.testimonial__textoIzq{
+    float: left;
+    width: 50%;
+
+    padding-top: 150px;
+}
+
+
+div.testimonial__textoDer{
+    float: left;
+    width: 50%;
+
+    padding-top: 150px;
+}
+
+
+
+p.testimonial__textoIzq__parrafo1,
+p.testimonial__textoDer__parrafo1
+{
+    font-size: 1rem;
+    padding-top: 10px;
+    padding: 0 60px;
+    text-align: center;
+
+}
+
+p.testimonial__textoIzq__parrafo2,
+p.testimonial__textoDer__parrafo2
+{
+    text-align: center;
+}
+
+
+/*contenedor__aplicativo*/
+section.contenedor__aplicativo{
+    padding: 70px 0 90px 0;
+}
+
+div.aplicativo__logo{
+    text-align: center;
+    padding: 20px;
+
+}
+
+
+div.aplicativo__logo img{
+    height: 60px;
+
+
+}
+
+
+/*Footer*/
+footer.contenedor__footer{
+    padding: 30px;
+}
+
+
+
+p.derechos{
+    text-align: center;
+    font-weight: 300;
+    font-size: 0.8rem;
+}
+p.derechos span{
+    font-weight: 500;
+}
+
+
+
+/*Responsive*/
+@media(max-width: 768px ) {
+
+    div.superior__logo{
+        float: none;
+        text-align: center;
+    }
+
+
+    div.superior__menu{
+        float: none;
+        text-align: center;
+        padding: 0;
+    }
+
+    ul.superior__menu__opciones li{
+        float: none;
+    }
+
+    ul.superior__menu__opciones li a    
+    {
+        padding: 15px;
+    }
+
+    div.banner__titulo p{
+        width: 100%;
+    }
+
+    header.contenedor__header{
+        height: 100%;   /********************************** ojo ahi */
+    }
+
+
+    div.banner__titulo h2{
+        font-size: 1.8rem
+    }
+
+
+
+    div.banner__imagen img{
+        width: 100%;      
+    }
+
+
+
+    /*about*/
+    h3.about__titulo{
+        width: 100%;
+    }
+
+    div.about__textoIzquierdo{
+        float: none;
+        width: 100%;
+        text-align: center;
+        padding: 30px 0 0 0;
+    }
+
+    div.about__textoDerecho{
+        float: none;
+        width: 100%;
+        text-align: center;   
+        padding: 30px 0 0 0; 
+    }
+
+
+    p.textoIzquierdo__parrafo1{
+        font-size: 1.8rem;
+        text-align: center;
+        font-weight: 400;
+    }
+
+
+    p.textoDerecho__parrafo1,
+    p.textoDerecho__parrafo2{
+        text-align: center;
+        padding: 0;
+    }
+
+
+
+    /*Testimonial*/
+    h3.testimonial__titulo{
+        width: 100%;
+    }
+
+    div.testimonial__textoIzq{
+        float: none;
+        width: 100%;
+        text-align: center;
+        padding: 30px 0 0 0;
+    }
+
+    div.testimonial__textoDer{
+        float: none;
+        width: 100%;
+        text-align: center;
+        padding: 30px 0 0 0;
+    }
+
+    p.testimonial__textoIzq__parrafo1{      
+        float: none;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+
+
+    p.testimonial__textoDer__parrafo1{      
+        float: none;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+    
+
+
+    p.testimonial__textoIzq__parrafo2,
+    p.testimonial__textoDer__parrafo2{
+        font-weight: 500;
+    }
+
+
+
+
+
+
+    div.aplicativo__logo img{
+        margin-top: 0;
+    }
+
+
+}
+
+
