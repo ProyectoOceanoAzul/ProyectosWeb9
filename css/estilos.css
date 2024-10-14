@@ -472,7 +472,7 @@ p.derechos span{
 
 @media only screen and  (max-width: 578px){
     h3.testimonial__titulo{
-        width: 100%;
+        width: 50%;
     }
 
 }
